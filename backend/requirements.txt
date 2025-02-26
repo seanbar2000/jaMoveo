@@ -1,0 +1,5 @@
+fastapi
+pydentic
+pymongo
+websockets
+uvicorn
