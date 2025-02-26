@@ -1,0 +1,51 @@
+/* Center the form and title */
+.login-form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the title */
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Increase title font size */
+}
+
+/* Style for each input field and label */
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%; /* Make the input take up full width of the container */
+  max-width: 600px; /* Set a maximum width for the input */
+}
+
+/* Style the buttons container */
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons side by side */
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+/* Style the buttons */
+.buttons-container button {
+  padding: 10px 20px;
+  flex: 1; /* Make both buttons the same size */
+  font-size: 16px; /* Make font size consistent */
+  min-width: 120px; /* Ensure the buttons have a minimum width */
+  cursor: pointer;
+}

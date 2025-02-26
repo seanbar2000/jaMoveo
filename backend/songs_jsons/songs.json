@@ -1,0 +1,16 @@
+[
+  {
+    "name": "hey jude",
+    "artist": "The Beatles",
+    "karaoke_file_name": "hey_jude.json",
+    "image_url": "",
+    "language": "en"
+  },
+  {
+    "name": "veech shelo",
+    "artist": "Ariel Zilber",
+    "karaoke_file_name": "veech_shelo.json",
+    "image_url": "",
+    "language": "he"
+  }
+]

@@ -1,0 +1,6 @@
+
+#activate venv
+.\.venv\Scripts\Activate.ps1
+
+#run server
+python server.py

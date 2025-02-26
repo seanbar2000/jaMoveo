@@ -1,0 +1,63 @@
+/* Center the form with left-aligned inputs */
+.signup-form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align everything to the left */
+}
+
+/* Style for the title */
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Same title font size as the login form */
+}
+
+/* Style for each input field and label */
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row; /* Align label and input side by side */
+  align-items: center;
+}
+
+.input-group label {
+  width: 100px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.input-group input {
+  width: 200px; /* Set width for input */
+  padding: 10px;
+  font-size: 16px;
+  max-width: 400px; /* Max width for the inputs */
+}
+
+/* Style for the checkbox */
+.checkbox-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-left: 10px;
+}
+
+/* Style the buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  font-size: 16px; /* Same font size for the button as the login form */
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px; /* Max width to prevent the button from stretching too far */
+}

@@ -1,0 +1,74 @@
+/* Center the container at the top of the page */
+.search-results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center horizontally */
+  padding-top: 50px; /* Space from the top */
+  width: 100%; /* Take full width */
+  text-align: center; /* Center text */
+  background-color: #f1f1f2; /* Set background color */
+}
+
+/* Style for the title */
+.search-results-container h1 {
+  font-size: 2rem;
+  color: #1995ad; /* Title color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+/* Style for the username */
+.search-results-container h3 {
+  font-size: 1.25rem;
+  color: #1995ad; /* Username color */
+  margin-bottom: 20px; /* Space between the username and the list */
+}
+
+/* Style for the unordered list */
+.search-results-container ul {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 80%; /* Limit the width of the list */
+  max-width: 600px; /* Max width for large screens */
+}
+
+/* Style each list item */
+.search-results-container li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #a1d6e2; /* Border color */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s;
+  background-color: #ffffff; /* White background for items */
+}
+
+/* Add a hover effect to each song item */
+.search-results-container li:hover {
+  background-color: #a1d6e2; /* Light blue hover effect */
+}
+
+/* Style the image */
+.search-results-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Style for song name and artist text */
+.search-results-container h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333; /* Dark color for the song name */
+}
+
+.search-results-container p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666; /* Lighter color for artist */
+}
