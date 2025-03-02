@@ -21,7 +21,7 @@ def start_server():
 
     uvicorn.run(
         app,
-        host="my-api.railway.internal",
+        host="localhost",
         port=8080,
         log_level="debug",
     )
