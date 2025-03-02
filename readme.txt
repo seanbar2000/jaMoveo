@@ -1,29 +1,10 @@
 open terminal from jaMoveo folder.
 
-Firstly run the command:
+run:
 docker-compose up -d
 
-activate server:
-run-
-cd backend
-#activate venv
-.\.venv\Scripts\Activate.ps1
-
-#install libs
-pip install --no-cache-dir -r requirements.txt
-
-#run server
-python server.py
-
-then go back to the jaMoveo terminal with:
-cd ..
-
-and then to run the website:
-run in the terminal
-
-cd frontend/app
-
-and then run npm start
+you can access the website through the url:
+http://localhost:3000/
 
 how to create a regular user:
 after running the app you will go to the login page.

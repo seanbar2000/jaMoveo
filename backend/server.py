@@ -3,7 +3,6 @@ import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 from api_handlers.main_page_api import router as web_socket_router
 from api_handlers.user_auth_api import router as user_auth_router
-import appSetUp
 
 app = FastAPI()
 app.include_router(web_socket_router, prefix="/main", tags=["web_socket"])
@@ -29,5 +28,4 @@ def start_server():
     # webbrowser.open("http://localhost:8080")
 
 if __name__ == "__main__":
-    appSetUp.update_db()
     start_server()

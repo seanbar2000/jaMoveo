@@ -1,6 +1,25 @@
 version: "3.8"
 
 services:
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    networks:
+      - mynetwork # Shared network
+
+  frontend:
+    build: ./frontend/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - mynetwork
+
   mongo:
     image: mongo:latest
     container_name: mongodb
@@ -8,3 +27,9 @@ services:
     ports:
       - "27017:27017"
     command: ["mongod", "--bind_ip_all", "--noauth"]
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
